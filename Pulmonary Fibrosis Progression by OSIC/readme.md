@@ -6,6 +6,7 @@
 
 A few notable changes in the model that have affected performance (note that a numbers lcoser to 0 are more desirable):
 
+Intention: Test certain layer, decay, and epoch combinations
 - Version 1: Scored -6.8781
 - Version 2: Scored -6.8354 (Changed decay from 0.05 to 0.01)
 - Version 3: Scored -6.8717 (Changed 2 dense layers "d1" and "d2" from 100 to 110 layers)
@@ -14,12 +15,23 @@ A few notable changes in the model that have affected performance (note that a n
 - Version 6: Scored -6.8447 (Increased epochs to 850 from 700)
 - Version 7: Scored -6.8463 (Decreased epochs to 810 from 850)
 - Version 8: Scored -6.8391 (Decreased epochs from 810 to 790)
+
+Intention: Test dropout, tune epochs/decay
 - Version 9: Scored -6.9176 (Add third dense layer of 100 neurons "d3" and add dropout of 0.1, increase epochs from 790 to 1000)
 - Version 10: Scored -6.9026 (Removed third dense layer of 100 neurons "d3" and decrease dropout from 0.1 to 0.05)
 - Version 11: Scored -6.8475 (Removed dropout and add sigmoid in place of linear output "p1")
 - Version 12: Scored -6.8476 (Increase epochs from 1000 to 1500)
 - Version 13: Scored -6.8533 (Decrease decay from 0.01 to 0.005 and decrease epochs from 1500 to 600)
-- Version 14: Scored  -6.8790 (Replace sigmoid "p1" activation with relu, increase epochs from 600 to 800)
 
+Intention: Fine tune using what we learned in previous tests and test activation combinations. Reverted most parameters to Version 2. 
+- Version 14: Scored -6.8790 (Replace sigmoid "p1" activation with relu, increase epochs from 600 to 800)
+- Version 15: Scored -6.8541 (Replace relu "p1" activation with sigmoid, decrease epochs from 800 to 650, increase decay from 0.005 to 0.01)
+- Version 16: Scored -6.xxxx (Replace sigmoid "p1" activation with linear)
+- Version 17: Scored -6.8649 (Replace linear "p1" activation with sigmoid, replace relu "p2" activation with linear)
+
+Future:
+- Version 18: Scored -6.xxxx (Find the best activation combo and increase epochs to 750)
+- Attempt to manipulate number of layers and neurons. 
+- Use images alongside metadata
 
 ![](https://img.techpowerup.org/200717/screenshot-20200717-155422.jpg)
