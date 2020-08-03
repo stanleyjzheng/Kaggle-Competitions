@@ -26,12 +26,8 @@ Intention: Test dropout, tune epochs/decay
 Intention: Fine tune using what we learned in previous tests and test activation combinations. Reverted most parameters to Version 2. 
 - Version 14: Scored -6.8790 (Replace sigmoid "p1" activation with relu, increase epochs from 600 to 800)
 - Version 15: Scored -6.8541 (Replace relu "p1" activation with sigmoid, decrease epochs from 800 to 650, increase decay from 0.005 to 0.01)
-- Version 16: Scored -6.xxxx (Replace sigmoid "p1" activation with linear)
 - Version 17: Scored -6.8649 (Replace linear "p1" activation with sigmoid, replace relu "p2" activation with linear)
 
-Future:
-- Version 18: Scored -6.xxxx (Find the best activation combo and increase epochs to 750)
-- Attempt to manipulate number of layers and neurons. 
-- Use images alongside metadata
+Public notebooks now score higher than this notebook, so I will work on different competitions. Currently trying a RL bot in Two Sigma's Halite
 
 ![](https://img.techpowerup.org/200717/screenshot-20200717-155422.jpg)
