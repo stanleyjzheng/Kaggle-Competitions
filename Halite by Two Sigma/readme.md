@@ -2,6 +2,8 @@
 
 Halite is a side project to me, where I worked on it weekly for a few hours. I did not put a significant amount of time into it like I did with Global Wheat, so my score shows this.
 
+Training pipelines will be released following the conclusion of the competition. 
+
 ##### Algorithmic solution
 `algorithmic.py` contains an algorithmic solution to Halite. It can earn a score of about 1000
 
